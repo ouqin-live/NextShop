@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -11,9 +13,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">快速链接</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-white">首页</a></li>
-              <li><a href="/products" className="text-gray-300 hover:text-white">商品列表</a></li>
-              <li><a href="/cart" className="text-gray-300 hover:text-white">购物车</a></li>
+              <li><Link href="/" className="text-gray-300 hover:text-white">首页</Link></li>
+              <li><Link href="/products" className="text-gray-300 hover:text-white">商品列表</Link></li>
+              <li><Link href="/cart" className="text-gray-300 hover:text-white">购物车</Link></li>
             </ul>
           </div>
           
